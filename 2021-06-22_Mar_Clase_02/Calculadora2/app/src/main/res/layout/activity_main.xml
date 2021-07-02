@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:contentDescription="Primer número"
+        android:ems="3"
+        android:gravity="end"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Segundo número"
+        android:ems="3"
+        android:gravity="end"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_num1" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:contentDescription="Resultado"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="end"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toEndOf="@+id/iv_igual"
+        app:layout_constraintTop_toBottomOf="@+id/et_num2" />
+
+    <ImageButton
+        android:id="@+id/ib_dividido"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:contentDescription="Dividir"
+        android:onClick="dividir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_por"
+        app:srcCompat="@drawable/dividido_off" />
+
+    <ImageButton
+        android:id="@+id/ib_mas"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="68dp"
+        android:contentDescription="Suma"
+        android:onClick="sumar"
+        android:src="@drawable/mas_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mas_off" />
+
+    <ImageView
+        android:id="@+id/iv_igual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="Igual"
+        android:longClickable="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_num2"
+        app:srcCompat="@drawable/igual" />
+
+    <ImageButton
+        android:id="@+id/ib_por"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:contentDescription="Multiplicar"
+        android:onClick="multiplicar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_menos"
+        app:srcCompat="@drawable/por_off" />
+
+    <ImageButton
+        android:id="@+id/ib_menos"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="Restar"
+        android:cropToPadding="false"
+        android:onClick="restar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_mas"
+        app:srcCompat="@drawable/menos_off" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
