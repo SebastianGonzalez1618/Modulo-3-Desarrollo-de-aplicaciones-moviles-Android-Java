@@ -108,13 +108,11 @@ public class MainActivity extends AppCompatActivity {
             double suma = valor1 + valor2;
             resultado.setTextSize(TypedValue.COMPLEX_UNIT_SP,48);
             resultado.setText(formatear(String.valueOf(suma)));
-            resultado.setTextSize(TypedValue.COMPLEX_UNIT_SP,48);
         }
         else
         {
             resultado.setTextSize(TypedValue.COMPLEX_UNIT_SP,24);
             resultado.setText("Ingrese ambos números.");
-            resultado.setTextSize(TypedValue.COMPLEX_UNIT_SP,24);
         }
 
     }
