@@ -1,6 +1,6 @@
 Actividades del día 3, semana 9.
 
-(Clase 3: Martes 23 de junio de 2021)
+(Clase 3: miércoles 23 de junio de 2021)
 
 ---
 
