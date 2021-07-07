@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculadora 7</string>
+    <string name="et_num1">Primer número</string>
+    <string name="et_num2">Segundo número</string>
+    <string name="div_0">La división por 0 no está definida.</string>
+    <string name="pedir_numeros">Ingrese ambos números.</string>
+    <string name="operaciones">Seleccionar operación</string>
+    <string name="sp_sumar">Sumar</string>
+    <string name="sp_restar">Restar</string>
+    <string name="sp_multiplicar">Multiplicar</string>
+    <string name="sp_dividir">Dividir</string>
+    <string name="bt_calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calculadora 6</string>
+    <string name="primer_numero">Primer número</string>
+    <string name="segundo_numero">Segundo número</string>
+    <string name="div_0">La división por 0 no está definida.</string>
+    <string name="pedir_numeros">Ingrese ambos números.</string>
+    <string name="sw_sumar">+</string>
+    <string name="sw_restar">-</string>
+    <string name="sw_multiplicar">*</string>
+    <string name="sw_dividir">/</string>
+    <string name="vt_igual">=</string>
+    <string name="resultado_suma">Resultado suma</string>
+    <string name="resultado_resta">Resultado resta</string>
+    <string name="resultado_multiplicacion">Resultado multilpicación</string>
+    <string name="resultado_division">Resultado división</string>
+</resources>
