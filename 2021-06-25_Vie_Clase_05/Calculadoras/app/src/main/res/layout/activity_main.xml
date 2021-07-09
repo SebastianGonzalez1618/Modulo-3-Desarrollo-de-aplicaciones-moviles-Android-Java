@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/titulo"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bt_ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irImageButton"
+                android:text="@string/bt_ImageButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ib_imagebutton" />
+
+            <Button
+                android:id="@+id/bt_CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irCheckBox"
+                android:text="@string/bt_CheckBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ib_checkbox" />
+
+            <Button
+                android:id="@+id/bt_Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irSwitch"
+                android:text="@string/bt_Switch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.77"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ib_switch" />
+
+            <Button
+                android:id="@+id/bt_Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irSpinner"
+                android:text="@string/bt_Spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ib_spinner" />
+
+            <Button
+                android:id="@+id/bt_RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="irRadioButton"
+                android:text="@string/bt_RadioButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ib_radiobutton" />
+
+            <ImageButton
+                android:id="@+id/ib_imagebutton"
+                android:layout_width="70dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/bt_ImageButton"
+                android:onClick="irImageButton"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
+                app:srcCompat="@drawable/preview_imagebutton" />
+
+            <ImageButton
+                android:id="@+id/ib_radiobutton"
+                android:layout_width="70dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/bt_RadioButton"
+                android:onClick="irRadioButton"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ib_imagebutton"
+                app:srcCompat="@drawable/preview_radiobutton" />
+
+            <ImageButton
+                android:id="@+id/ib_checkbox"
+                android:layout_width="70dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/bt_CheckBox"
+                android:onClick="irCheckBox"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="@+id/ib_imagebutton"
+                app:layout_constraintTop_toBottomOf="@+id/bt_ImageButton"
+                app:srcCompat="@drawable/preview_checkbox" />
+
+            <ImageButton
+                android:id="@+id/ib_switch"
+                android:layout_width="70dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/bt_Switch"
+                android:onClick="irSwitch"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="@+id/ib_radiobutton"
+                app:layout_constraintTop_toTopOf="@+id/ib_checkbox"
+                app:srcCompat="@drawable/preview_switch" />
+
+            <ImageButton
+                android:id="@+id/ib_spinner"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/bt_Spinner"
+                android:onClick="irSpinner"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_CheckBox"
+                app:srcCompat="@drawable/preview_spinner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

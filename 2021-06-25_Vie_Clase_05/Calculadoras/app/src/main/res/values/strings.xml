@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Calculadoras</string>
+    <string name="titulo">Galería de calculadoras</string>
+    <string name="bt_ImageButton">ImageButton</string>
+    <string name="bt_RadioButton">RadioButton</string>
+    <string name="bt_CheckBox">CheckBox</string>
+    <string name="bt_Switch">Switch</string>
+    <string name="bt_Spinner">Spinner</string>
+    <string name="bt_volver">Volver</string>
+
+    <string name="primer_numero">Primer número</string>
+    <string name="segundo_numero">Segundo número</string>
+    <string name="div_0">La división por 0 no está definida.</string>
+    <string name="pedir_numeros">Ingrese ambos números.</string>
+    <string name="sw_sumar">+</string>
+    <string name="sw_restar">-</string>
+    <string name="sw_multiplicar">*</string>
+    <string name="sw_dividir">/</string>
+    <string name="vt_igual">=</string>
+    <string name="resultado_suma">Resultado suma</string>
+    <string name="resultado_resta">Resultado resta</string>
+    <string name="resultado_multiplicacion">Resultado multilpicación</string>
+    <string name="resultado_division">Resultado división</string>
+
+    <string name="et_num1">Primer número</string>
+    <string name="et_num2">Segundo número</string>
+    <string name="operaciones">Seleccionar operación</string>
+    <string name="sp_sumar">Sumar</string>
+    <string name="sp_restar">Restar</string>
+    <string name="sp_multiplicar">Multiplicar</string>
+    <string name="sp_dividir">Dividir</string>
+    <string name="bt_calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+
+</resources>

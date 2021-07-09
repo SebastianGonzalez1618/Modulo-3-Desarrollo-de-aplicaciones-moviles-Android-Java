@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculadoraSwitch">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_volver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:onClick="volver"
+                android:text="@string/bt_volver"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/lo_calculadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/bt_volver">
+
+                <EditText
+                    android:id="@+id/et_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/primer_numero"
+                    android:ems="3"
+                    android:gravity="end"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textSize="48sp"
+                    tools:layout_editor_absoluteY="40dp" />
+
+                <EditText
+                    android:id="@+id/et_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/segundo_numero"
+                    android:ems="3"
+                    android:gravity="end"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:textSize="48sp"
+                    tools:layout_editor_absoluteY="149dp" />
+
+                <LinearLayout
+                    android:id="@+id/lo_suma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    tools:layout_editor_absoluteY="235dp">
+
+                    <Switch
+                        android:id="@+id/sw_sumar"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|end"
+                        android:onClick="calcular"
+                        android:text="@string/sw_sumar"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_igual_sumar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vt_igual"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_resultado_sumar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:contentDescription="@string/resultado_suma"
+                        android:foregroundGravity="center_horizontal"
+                        android:gravity="end"
+                        app:autoSizeTextType="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lo_resta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    tools:layout_editor_absoluteY="723dp">
+
+                    <Switch
+                        android:id="@+id/sw_restar"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|end"
+                        android:onClick="calcular"
+                        android:text="@string/sw_restar"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_igual_restar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vt_igual"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_resultado_restar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:contentDescription="@string/resultado_resta"
+                        android:foregroundGravity="center_horizontal"
+                        android:gravity="end"
+                        app:autoSizeTextType="none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lo_multiplicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    tools:layout_editor_absoluteY="723dp">
+
+                    <Switch
+                        android:id="@+id/sw_multiplicar"
+                        android:layout_width="15sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|end"
+                        android:onClick="calcular"
+                        android:text="@string/sw_multiplicar"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_igual_multiplicar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vt_igual"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_resultado_multiplicar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:contentDescription="@string/resultado_multiplicacion"
+                        android:foregroundGravity="center_horizontal"
+                        android:gravity="end"
+                        app:autoSizeTextType="none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lo_division"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    tools:layout_editor_absoluteY="723dp">
+
+                    <Switch
+                        android:id="@+id/sw_dividir"
+                        android:layout_width="15sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:onClick="calcular"
+                        android:text="@string/sw_dividir"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_igual_dividir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/vt_igual"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/tv_resultado_dividir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:contentDescription="@string/resultado_division"
+                        android:foregroundGravity="center_horizontal"
+                        android:gravity="center_horizontal|end"
+                        app:autoSizeTextType="none" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
