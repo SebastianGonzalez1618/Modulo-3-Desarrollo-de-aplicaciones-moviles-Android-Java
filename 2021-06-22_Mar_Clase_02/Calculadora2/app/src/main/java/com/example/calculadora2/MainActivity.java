@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
         iv_igual = findViewById(R.id.iv_igual);
 
         // Mostrar todos los botones "desactivados".
-        ib_mas.setImageDrawable(this.getDrawable(R.drawable.dividido_off));
+        ib_mas.setImageDrawable(this.getDrawable(R.drawable.mas_off));
         ib_menos.setImageDrawable(this.getDrawable(R.drawable.menos_off));
         ib_por.setImageDrawable(this.getDrawable(R.drawable.por_off));
         ib_dividido.setImageDrawable(this.getDrawable(R.drawable.dividido_off));
