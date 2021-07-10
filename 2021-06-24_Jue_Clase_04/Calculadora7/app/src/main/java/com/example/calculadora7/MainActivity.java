@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity
     private EditText et_num1, et_num2;
     private TextView tv_resultado;
     private Double num1, num2, resultado;
-    private Spinner sp_operaciones, sp_operaciones2;
+    private Spinner sp_operaciones;
 
 
     @Override
@@ -144,13 +144,6 @@ public class MainActivity extends AppCompatActivity
     {
         texto.setTextSize(TypedValue.COMPLEX_UNIT_SP,48);
         texto.setText(formatear(String.valueOf(resultado)));
-    }
-
-
-    public void mostrarMensaje(TextView texto, String mensaje)
-    {
-        texto.setTextSize(TypedValue.COMPLEX_UNIT_SP,24);
-        texto.setText(mensaje);
     }
 
 }
