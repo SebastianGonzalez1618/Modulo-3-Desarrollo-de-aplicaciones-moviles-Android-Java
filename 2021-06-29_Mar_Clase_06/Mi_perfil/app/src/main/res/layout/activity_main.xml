@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tv_nombre"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.077"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_nombre" />
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.094"
+                app:layout_constraintStart_toEndOf="@+id/tv_nombre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_pasatiempos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/tv_pasatiempos"
+                app:layout_constraintStart_toStartOf="@+id/tv_nombre"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
+
+            <CheckBox
+                android:id="@+id/cb_pasatiempos_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:text="@string/cb_pasatiempos_1"
+                app:layout_constraintStart_toStartOf="@+id/tv_pasatiempos"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pasatiempos" />
+
+            <CheckBox
+                android:id="@+id/cb_pasatiempos_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/cb_pasatiempos_2"
+                app:layout_constraintStart_toStartOf="@+id/cb_pasatiempos_1"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pasatiempos_1" />
+
+            <CheckBox
+                android:id="@+id/cb_pasatiempos_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/cb_pasatiempos_3"
+                app:layout_constraintStart_toStartOf="@+id/cb_pasatiempos_2"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pasatiempos_2" />
+
+            <CheckBox
+                android:id="@+id/cb_pasatiempos_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/cb_pasatiempos_5"
+                app:layout_constraintStart_toStartOf="@+id/cb_pasatiempos_4"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pasatiempos_4" />
+
+            <CheckBox
+                android:id="@+id/cb_pasatiempos_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:text="@string/cb_pasatiempos_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb_pasatiempos_1"
+                app:layout_constraintTop_toTopOf="@+id/cb_pasatiempos_1" />
+
+            <CheckBox
+                android:id="@+id/cb_pasatiempos_otros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:onClick="otros_pasatiempos"
+                android:text="@string/cb_pasatiempos_otros"
+                app:layout_constraintStart_toStartOf="@+id/cb_pasatiempos_5"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pasatiempos_5" />
+
+            <TextView
+                android:id="@+id/tv_algo_que_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tv_algo_que_me"
+                app:layout_constraintStart_toStartOf="@+id/cb_pasatiempos_3"
+                app:layout_constraintTop_toTopOf="@+id/et_algo_que_me" />
+
+            <Spinner
+                android:id="@+id/sp_algo_que_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/tv_algo_que_me"
+                app:layout_constraintTop_toTopOf="@+id/et_algo_que_me" />
+
+            <TextView
+                android:id="@+id/tv_algo_qu_me_es"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:text="@string/tv_algo_que_me_es"
+                app:layout_constraintStart_toEndOf="@+id/sp_algo_que_me"
+                app:layout_constraintTop_toTopOf="@+id/et_algo_que_me" />
+
+            <EditText
+                android:id="@+id/et_algo_que_me"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/tv_algo_qu_me_es"
+                app:layout_constraintTop_toBottomOf="@+id/et_pasatiempos_otros" />
+
+            <Switch
+                android:id="@+id/sw_confirmar_veracidad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:maxEms="25"
+                android:onClick="verificar_veracidad"
+                android:text="@string/sw_confirmar_veracidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/et_algo_sobre_mi"
+                app:layout_constraintTop_toBottomOf="@+id/et_algo_sobre_mi" />
+
+            <TextView
+                android:id="@+id/tv_algo_sobre_mi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tv_algo_sobre_mi"
+                app:layout_constraintStart_toStartOf="@+id/tv_algo_que_me"
+                app:layout_constraintTop_toBottomOf="@+id/tv_algo_que_me" />
+
+            <EditText
+                android:id="@+id/et_algo_sobre_mi"
+                android:layout_width="310dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_algo_sobre_mi"
+                app:layout_constraintTop_toBottomOf="@+id/tv_algo_sobre_mi" />
+
+            <Button
+                android:id="@+id/bt_enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="presentarse"
+                android:text="@string/bt_enviar"
+                app:layout_constraintStart_toStartOf="@+id/sw_confirmar_veracidad"
+                app:layout_constraintTop_toBottomOf="@+id/sw_confirmar_veracidad" />
+
+            <EditText
+                android:id="@+id/et_pasatiempos_otros"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/cb_pasatiempos_otros"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pasatiempos_otros" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

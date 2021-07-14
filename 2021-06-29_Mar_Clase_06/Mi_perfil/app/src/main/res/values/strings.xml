@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Mi perfil</string>
+    <string name="tv_nombre">Nombre: </string>
+    <string name="tv_pasatiempos">Pasatiempos</string>
+    <string name="cb_pasatiempos_1">Leer</string>
+    <string name="cb_pasatiempos_2">Ver películas o series</string>
+    <string name="cb_pasatiempos_3">Hacer deporte</string>
+    <string name="cb_pasatiempos_4">Pasear o viajar</string>
+    <string name="cb_pasatiempos_5">Juntarme con amistades</string>
+    <string name="cb_pasatiempos_otros">Otros</string>
+    <string-array name="algo_que_me_opciones">
+        <item>alegra</item>
+        <item>apena</item>
+        <item>asusta</item>
+        <item>enoja</item>
+        <item>desagrada</item>
+    </string-array>
+    <string name="tv_algo_que_me">Algo que me </string>
+    <string name="tv_algo_que_me_opcion1">alegra</string>
+    <string name="tv_algo_que_me_opcion2">apena</string>
+    <string name="tv_algo_que_me_opcion3">asusta</string>
+    <string name="tv_algo_que_me_opcion4">enoja</string>
+    <string name="tv_algo_que_me_opcion5">desagrada</string>
+    <string name="tv_algo_que_me_es">es</string>
+    <string name="tv_algo_sobre_mi">Algo más sobre mí</string>
+    <string name="sw_confirmar_veracidad">Juro que todo lo expresado aquí es la verdad, solamente la verdad, y nada más que la verdad.</string>
+    <string name="bt_enviar">Enviar</string>
+    <string name="corregir_otros_pasatiempos_en_blanco">Escribe tus otros pasatiempos o desmarca la opción "Otros".</string>
+    <string name="perfil_soy">Soy\u0020</string>
+    <string name="perfil_mi_pasatiempo_favorito_es">Mi pasatiempo favorito es\u0020</string>
+    <string name="perfil_mis_pasatiempos_favoritos_son">Mis pasatiempos favoritos son\u0020</string>
+    <string name="perfil_y">\u0020y\u0020</string>
+    <string name="bt_volver">Volver</string>
+</resources>
